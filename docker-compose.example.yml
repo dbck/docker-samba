@@ -1,0 +1,8 @@
+version: "3"
+services:
+  samba:
+    image: dbck/samba:latest
+    environment:
+      - TZ=Europe/Berlin
+    ports:
+      - "127.0.0.1:445:445"

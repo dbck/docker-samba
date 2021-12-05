@@ -1,0 +1,10 @@
+version: "3"
+services:
+  samba:
+    image: dbck/samba:${TAG}
+    build:
+      context: ./build
+    environment:
+      - TZ=Europe/Berlin
+    ports:
+      - "445:445"
